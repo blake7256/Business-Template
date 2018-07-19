@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Chimney Sweep</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- https://github.com/daneden/animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- michalsnik.github.io/aos/-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar light-black w3-card" id="myNavbar">
+            <a href="#home" class="slide-section w3-wide navLink slide-section w3-bar-item w3-button w3-hover-none w3-hover-text-white">AFFORDABLE CHIMNEY SWEEP</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="navLink slide-section w3-bar-item w3-button w3-hover-none">About</a>
+                <a href="#team" class="navLink slide-section w3-bar-item w3-button w3-hover-none w3-hover-text-gray">Chimney Sweeping</a>
+                <a href="index.php" class="navLink slide-section w3-bar-item w3-button w3-hover-none w3-hover-text-gray">Pricing</a>
+                <a href="#contact" class="navLink slide-section w3-bar-item w3-button w3-hover-none w3-hover-text-gray">Contact</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="openSidebar()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeSidebar()" class="w3-bar-item w3-button w3-large w3-padding-16 ">Close ×</a>
+        <a href="#about" onclick="closeSidebar()" class="slide-section w3-bar-item w3-button ">About</a>
+        <a href="#team" onclick="closeSidebar()" class="slide-section w3-bar-item w3-button">Link 1</a>
+        <a href="#work" onclick="closeSidebar()" class="slide-section w3-bar-item w3-button">Link 2</a>
+        <a href="#pricing" onclick="closeSidebar()" class="slide-section w3-bar-item w3-button">Link 3</a>
+        <a href="#contact" onclick="closeSidebar()" class="slide-section w3-bar-item w3-button">Link 4</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min " id="home">
+        <div class="w3-display-middle w3-center w3-text-white w3-left" style="padding:48px">
+            <span data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="w3-jumbo w3-hide-small w3-hide-medium w3-center ">Reliable Chimney Sweeping</span>
+            <br>
+            <span class=" w3-xxlarge w3-left w3-hide-large s4  w3-padding-32">Reliable Chimney Sweeping</span>
+            <br>
+            <br>
+
+            <span class="w3-large">We do everything we can to make sure you are a satisfied customer.</span>
+            <br>
+            <br>
+            <br>
+            <!-- <p>
+                <a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started</a>
+                
+            </p> -->
+            <p>
+                <a href="#contact" class="slide-section">
+                    <button class="btn btn-light btn-lg w3-hover-opacity ">
+                        <div class="w3-text-black ">Contact Us</div>
+                    </button>
+                </a>
+            </p>
+            <br>
+            <br>
+
+        </div>
+        <section id="section04" class="demo w3-display-bottommiddle">
+
+            <a class="slide-section" href="#about">
+                <span></span>
+            </a>
+        </section>
+    </header>
+
+    <!-- About Section -->
+
+    <div class="w3-container aboutSection" style="padding:80px 16px" id="about">
+        <div class="aboutIntro">
+            <h3 data-aos="fade-zoom-in" class="w3-center w3-wide">ABOUT US</h3>
+            <br>
+            <p data-aos="fade-right" data-aos-duration="1000" class="w3-center w3-large aboutParagraph">Affordable Chimney Sweep is a small family-owned business established in 2007. We are dedicated to providing
+                a personal level of service to our customers at a reasonable price. Affordable Chimney Sweep services St.
+                Charles, Lincoln, Warren, North & West St. Louis Counties. We carry both Workmans Compensation and General
+                Liability Insurance and are A+ rated with the Better Business Bureau.
+
+            </p>
+        </div>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-half">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Title 1</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="w3-half">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Title 2</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-theme-d5" style="padding:80px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-half">
+                <p>
+                    <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>St. Louis</p>
+                <p>
+                    <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+                <p>
+                    <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+                <br>
+                <form action="contactform.php" target="_blank">
+                    <p>
+                        <p>Name:</p>
+                        <input class="form-control" type="text" placeholder="First & Last Name" required name="Name">
+                    </p>
+                    <p>
+                        <p>Email:</p>
+                        <input class="form-control" type="text" placeholder="example@domain.com" required name="Email">
+                    </p>
+                    <p>
+                        <p>Subject:</p>
+                        <input class="form-control" type="text" placeholder="Subject" required name="Subject">
+                    </p>
+                    <p>
+                        <br>
+                        <textarea name="Message" class="form-control" placeholder="Enter a message..." rows="5" id="comment"></textarea>
+                    </p>
+                    <br>
+                    <p>
+                        <button class="btn btn-default btn-lg" type="submit" name="Submit">
+                            <i class="fa fa-paper-plane"></i> Send Message
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="w3-half">
+                <!-- Add Google Maps -->
+                <div id="contactImage" class="w3-greyscale-min" style="width:90%;height:510px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="w3-container light-black w3-card">
+        <div class="footer">
+            <h5>Footer</h5>
+            <p>Footer information goes here</p>
+        </div>
+    </footer>
+
+
+    <script>
+        function myMap() {
+            myCenter = new google.maps.LatLng(41.878114, -87.629798);
+            var mapOptions = {
+                center: myCenter,
+                zoom: 12, scrollwheel: false, draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+            marker.setMap(map);
+        }
+        // Sidebar toggle
+        let mySidebar = document.getElementById("mySidebar");
+
+        function openSidebar() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function closeSidebar() {
+            mySidebar.style.display = "none";
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <script>
+        //Smooth scrolling with jQuery
+        $(document).ready(function () {
+            $('.slide-section').click(function (e) {
+                const linkHref = $(this).attr('href');
+
+                $('html, body').animate({
+                    scrollTop: $(linkHref).offset().top
+                }, 1000);
+
+                e.preventDefault();
+
+            });
+        });
+
+
+    </script>
+    <!-- initializing AOS animation library -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
